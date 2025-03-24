@@ -1,0 +1,518 @@
+
+Search in video
+intro
+0:00
+if you're just starting out in web development you might feel like the only websites you can create are those with a
+0:05
+dated '90s look today that changes get ready to flex your skills because we're going to build one of the most
+0:11
+impressive websites you can create using just HTML and CSS I know you might be a
+0:17
+complete beginner so don't worry I'll break down every single step ensuring everything is clear and easy to follow
+0:23
+before we dive into the coding let's take a moment to preview the final project
+0:32
+[Music]
+0:43
+and remember your likes and subscriptions are a huge support for this growing Channel they help us keep
+0:49
+creating content like this so thank you in advance without further Ado let's get started and make something amazing
+0:56
+together [Music]
+1:08
+before we begin coding it's essential to prepare some resources including images and videos these can be found in the
+1:14
+GitHub repository Linked In the description box head to the repository and once you're there take a moment to
+1:21
+give it a star to support the project after that locate the two
+1:26
+folders within the repository download all the files from these folders and organize them on your computer a good
+1:32
+approach is to create a main folder and within it separate subfolders for the images and videos next open your
+1:39
+preferred code editor drag and drop the folder you just organized into the editor this will make
+1:46
+it easier to access and reference the files as we build the project we'll start by creating two
+1:51
+files one for the HTML structure called index.html and another for The Styling
+1:57
+named style.css these files will be the foundation of the project open the
+2:02
+index.html file and set up the basic HTML framework be sure to include a
+2:08
+title that reflects the purpose of your website once that's done open the file in your browser using a tool like live
+2:14
+server this will let you see the changes you make in real time inside the body section of the HTML create a div element
+2:21
+with a class name of container this div will act as a wrapper for all the elements we'll be adding the first
+2:28
+element we need is a video that will serve as the background to do this add a video tag inside the container and Link
+2:35
+the galaxy. mpp4 file you downloaded earlier make sure the video file located
+2:40
+in the correct folder so the link works seamlessly to make the video function as
+2:46
+a proper background add the following properties to it autoplay Loop muted and
+2:51
+plays inline these ensure the video starts automatically plays continuously has no sound and works properly on
+2:58
+mobile browsers additionally assign the video a class name such as back vid so it can be styled
+video background
+3:04
+later now we need to link the CSS file to our project to do this go to the Head
+3:10
+section of your HTML file and include the link to the CSS file this will
+3:15
+ensure that the Styles we Define are applied to our web page once that's done
+3:21
+navigate to the CSS file and start by targeting the body element the goal here
+3:26
+is to remove the default margin and padding that browsers typically add this gives us a clean slate for styling next
+3:33
+choose a font family that suits the design and set the default text color to a light
+3:44
+gray now move on to styling the container set its position to relative to allow precise control over the
+3:51
+positioning of child elements Define its width as 100% and its height as 100
+3:57
+viewport height or 100 V this ensures the container spans the full height of the
+4:04
+screen for the back vid class which is the video element set its position to
+4:10
+Absolute then align it by setting right and bottom to
+4:18
+zero to make sure the video stays behind other elements assign it a zindex of
+4:23
+niif one at this stage the video should be correctly positioned as a background
+4:28
+to ensure the video displays perfectly on all screen sizes we'll use a media query to handle aspect ratios start with
+4:35
+a Max aspect ratio of 16
+4:44
+to9 for this condition set the video's width to Auto and its height to 100%
+4:50
+this will keep the video's proportions intact for wider
+4:56
+screens for a Min aspect ratio set the width to 100% and the height to Auto this ensures the
+5:03
+video fits well on taller screens without Distortion with these adjustments the video background will be responsive and
+5:09
+look great across different devices and screen sizes the website is looking great so far now let's add add a cover
+5:17
+to enhance its design to do this go to the HTML file and right below the video
+5:22
+element create a div with the class name cover next move to your CSS file always
+5:28
+place your media queries at the bottom of the stylesheet after all other
+5:34
+styles Target the cover class and set its position to fixed use the inset
+5:40
+property to set the top bottom left and right values to zero finally apply a
+5:45
+dark purple color to the cover that complements your
+5:51
+design with the cover in place let's move on to creating the header section in the HTML file below the cover
+5:58
+div add a header element inside the header start by creating a div with the
+create the header
+6:03
+class name left within this left div add an image element for your logo you can
+6:09
+customize this logo to fit your brand below the image add an H2 element where you can include your name or brand
+6:20
+name next below the left div create an unordered list with three list items
+6:26
+each list item should contain an anchor tag name these links as follows about
+6:31
+skills and projects after the list add another div with the class name box
+6:36
+icons inside this div create three tags these will hold social media
+6:45
+icons to add the icons visit the website boxy cons.
+6:51
+comom on the box acons homepage click usage in the top right corner scroll
+6:57
+down until you see usage as a font copy the code snippet provided there and paste it inside the head tag of your
+7:03
+HTML file now go back to boxon and search for the social media icons you
+7:08
+want to use for example start with YouTube click on the icon choose the
+7:14
+font option and copy the code then paste it inside one of the P tags in your HTML
+7:23
+file repeat the process for two additional icons of your choice once you've added the icons move to the CSS
+7:30
+file to style the
+7:43
+header now let's style the header to give it a modern and clean appearance start by targeting the header itself in
+7:49
+the CSS set its display to flex to align its child elements neatly with a line
+7:55
+item set to Center and justify content to set the space between
+8:04
+add padding of zero and 30px for spacing and set it height to
+8:11
+70px next choose a white background color for the header and add a blur
+8:17
+effect using the backdrop filter property
+8:30
+to make the blur effects Stand Out adjust the background color to be slightly transparent this creates a
+8:35
+Sleek frosted glass appearance to enhance the header add a subtle box
+8:45
+Shadow use a color with a bit of transparency to keep it soft and
+8:54
+elegant finally set the Z index to 9 or 99 to ensure the header always always
+8:59
+displays above other elements now move on to styling the left class inside the
+9:07
+header set its display to flex and align its items to the
+9:16
+center for the image inside the left class set its width to 40 PX and add a margin of zero and 15 PX for proper
+9:27
+spacing for the h Two element in the left class we want part of its text to have a different color to achieve this
+9:35
+go back to the HTML file and wrap the portion of text you want to style inside a span element then add an inline style
+9:43
+to the span and set its color to your special blue this makes the header more visually
+9:48
+appealing returning to the CSS Target the unordered list inside the
+9:56
+header set its display to flex with justify content set the space between and give it a width of 30
+10:06
+Cent add padding of 15 PX and a border radius of 50 PX to give it a pill-shaped
+10:18
+appearance use a transparent dark blue background color and apply a blur effect
+10:23
+with backdrop filter
+10:32
+then enhance it further by adding a box Shadow for
+10:46
+depth next style the list items by removing their default list
+10:54
+style for the anchor tags inside the list remove the text decoration
+11:01
+set the color to white and make the font bold with a font weight of 700 add a transition effect for smooth animations
+11:07
+and give them a margin of 0er and 10 PX to create a hover effect add a text
+11:13
+Shadow when the user hovers over the links which makes the interaction more
+11:24
+Dynamic finally let's focus on the social media icons Target the icons div
+11:30
+and set its display to flex with a gap of 40px between the
+11:39
+icons for the P tags Inside the Box icons set their display to flex align
+11:44
+the items to the center and justify the content in the center as
+11:52
+well set their font size to 20 PX and make them circular by setting both their
+11:57
+width and height to 30 PX X add a two pixel solid border with a
+12:05
+special blue
+12:10
+color and applying a border radius of
+12:16
+50% and set the cursor to pointer for
+12:23
+interactivity for the hover effect change the background color to Blue the text color to
+12:31
+Black and add a box Shadow with a blue
+12:42
+glow to make the transition smoother apply a transition of 0.5 seconds to the
+12:48
+icons now here's where the fun really begins we're going to add a black hole video to the center of the header
+12:53
+creating a stunning visual effect to start navigate to your HTML file just
+12:59
+below below the header create a div with the class name black hole box inside
+13:05
+this div add a video element and Link the black hole. mpp4 file to its source attribute make sure to add the following
+13:11
+properties to the video autoplay Loop muted and place in line these settings
+13:17
+ensure the video plays automatically Loops seamlessly has no sound and works correctly across all
+13:23
+devices next move to your CSS file to style the black hole video
+13:32
+Begin by targeting the black hole box class set its position to Absolute and place it at the top of the page with top
+13:38
+zero make its width 100% to span the full width of the viewport use display
+13:44
+flex and justify content Center to Center the video horizontally within the box to make sure it stays behind the
+13:50
+header assign it a zindex of 91
+14:00
+now style the video element inside the black hole box set its width to 100% so
+14:05
+it scales appropriately with the screen size to position it at the very top of the page apply a margin top of 9
+14:12
+23.5 at this stage you might notice that the black hole video is displaying above the background video disrupting the
+14:18
+design to fix this we'll blend the two videos together inside the black hole
+14:24
+box div use the mix blend mode property and set it to light lighten this creates
+14:30
+a beautiful merging effect between the black hole video and the background making it look phenomenal you might
+14:37
+notice a faint line appearing from the black hole video don't worry about that now we'll address it by adding a hero
+14:43
+section next now let's move on to the next section of our project which is the hero
+14:50
+section go to your HTML file and below the black hole box div create a new
+14:55
+section with the class name hero this will serve as the main contain container for this part of the web page the first
+create hero-section
+15:01
+part of the hero section will be the hero info div inside this div start by
+15:07
+creating another div with the class name title for this title we want to add an
+15:12
+icon visit boxy con.com search for the sketch
+15:18
+icon select the font option and copy the provided code paste this code inside the
+15:24
+title div below the icon add the corresponding text to complete the title
+15:35
+once the title is in place let's create the other parts of the hero info section below the title div add an H1
+15:43
+element with the text providing the best project experience this headline will serve as the central message of the hero
+15:51
+section next add a P tag below the H1 include descriptive text that
+15:57
+complements the headline finally add a button element as the last part of the hero info section inside this button
+16:04
+will include another icon and some text go back to box AC cons. search for the
+16:10
+send icon and copy its code paste the icon code inside the button followed by the text contact me at this point all
+16:17
+the necessary elements for the hero info section are in place now head over to the CSS file to
+16:24
+style them let's now style the hero section and bring it to life start by
+16:29
+targeting the hero section in the CSS set its position to relative to establish its context for absolutely
+16:36
+positioned child elements make it span the full width of the screen by setting its width to 100%
+16:43
+And set its height to 80 V for a balanced layout use align items Center
+16:49
+and justify content space between to ensure everything inside is aligned neatly and spaced out properly next
+16:56
+focus on the hero info div position it absolutely and place it slightly from the left by setting left
+17:03
+5% this ensures it sits in a prominent location within the hero section now
+17:08
+let's style the individual elements inside hero info begin with the title class set its text color to Blue and add
+17:15
+padding of 8px 5px for spacing inside give it a rounded shape by setting a border radius of 50px and a border of 1
+17:22
+PX solid using a blue color with slight transparency set the width of the title to 240 PX apply a specific heximal
+17:30
+background color and add a subtle box Shadow for
+17:48
+depth next Target the H1 inside the hero info increase its font size to 60 PX and
+17:56
+limit its width to 600 PX for a structured layout
+18:02
+out set the font weight to 700 and the line height to match at 60px add a margin top of 40 PX and a
+18:10
+margin bottom of 30 PX for proper
+18:22
+spacing now style the P tag set its maximum width to 550 PX and a line
+18:27
+height of 25 PX to ensure readability add a margin bottom of 40px for spacing
+18:33
+and set its font size to 20 PX for a professional look for the button style
+18:39
+it with a white text color and add padding of 15 PX 35px round the edges by setting a border
+18:45
+radius of 10 PX and add a 1 PX solid border with a specific color use a dark
+18:52
+blue background color with slight transparency and add a box Shadow for a polished clickable effect
+19:03
+change the cursor to a pointer to indicate interactivity to make the button more Dynamic add a hover effect
+19:09
+when the user hovers over it increase the Box Shadow for
+19:16
+emphasis use a transition effect of3 seconds to make the hover effect
+19:22
+smooth finally let's add a gradient text effect to specific parts of the
+19:27
+H1 start by defining an animation within a class named
+19:35
+gradient set a linear gradient background that transitions from left to right using specific colors ensuring the
+19:42
+first and last colors are the same for a seamless Loop set the background size to 200% and
+19:50
+apply background clip text and- webkit background clip text to ensure only the
+19:56
+text shows the gradient
+20:02
+set webkit text fill color to transparent to hide the background behind the gradient Define the animation
+20:08
+itself with the name animate gradient which runs for 2.5 seconds uses
+20:16
+a linear timing function and Loops
+20:24
+infinitely to apply this gradient effect go to the HTML file and locate the H1
+20:30
+inside the hero info wrap the text Parts you want to animate like the best and experience in Span
+20:39
+elements and add the gradient class to these spans this applies the gradient effect to those specific
+20:54
+words finally ensure the gradient animation works by adding key Fram that change the background position to
+21:04
+200% this creates a smooth flowing gradient effect that looks fantastic and adds a vibrant touch to the
+21:11
+design let's enhance the hero section by adding an astronaut image go back to the HTML file and below the hero info div
+21:19
+create an IMG element link the astronaut. PNG file to its SRC attribute
+21:29
+and assign it a class name of
+21:37
+astronaut now move to the CSS file to style the astronaut image Target the astronaut class and set its position to
+21:50
+Absolute place it towards the right by setting right 5% adjust the size by
+21:55
+setting its height to 400 PX to seamlessly blend the astronaut image
+22:01
+with the background video apply the mix blend mode property and set it to lighten this will integrate the image
+22:07
+beautifully into the scene with that complete let's transition to the final section of our project in the HTML file
+22:15
+below the hero section create a new section with the class name about
+22:24
+section inside this section start by creating a div with the class name info card each info card will consist of a
+create info-cards
+22:32
+Deb H1 element for the title and a P tag for additional
+22:43
+details once the first card is created simply copy and paste the info card code
+22:48
+three more times to create additional cards customize the details for each
+22:53
+card for instance the second card might highlight achievements such as more than seven technical
+23:04
+skills once that's done let's move on to styling the last section of our project in the CSS file start by targeting the
+23:12
+about section set its display property to flex to arrange the info cards side by side use justify content space
+23:19
+between to evenly distribute them across the section add padding of 0 10% to
+23:25
+create some spacing on the sides ensuring the section looks well balanced next Target the infocard divs set their
+23:33
+display property to flex and align items to the Center for a neat and uniform layout limit their maximum width to 120
+23:39
+PX to maintain a consistent size for all cards now style the H1 inside each card
+23:46
+to give it a dynamic touch adjust the text gradient animation copy the gradient animation code from the
+23:52
+previously defined gradient class and paste it here then set the font size to
+23:57
+55 PX to make the titles prominent add a margin top of 20 PX for spacing and
+24:03
+ensure both the top and bottom margins are set to zero for
+24:10
+alignment for the P tags inside the cards set the text color to white for readability and adjust the font size to
+24:18
+20 PX for a professional and Polished look with these adjustments the layout
+24:24
+and styling of the about section are complete next we'll focus on making the website responsive for tablets and
+24:31
+mobile devices finally We'll add a simple reload animation to give the website an engaging Finishing
+24:41
+Touch let's make the website fully responsive starting with adjustments for
+24:47
+tablets for screen sizes smaller than 1,000 pixels we'll tweak some Styles in
+24:53
+your CSS file add a media query for screens under 1,000 pixels
+make it responsive for tablets
+25:08
+first modify the black hole video by changing its margin top to Native
+25:16
+20% Then adjust the H1 inside the hero info section by setting its font size to
+25:22
+40 PX and reducing its maximum width to 400 PX
+25:31
+next Target the P tag in the hero info and set its maximum width to 300 PX for
+25:36
+better readability for the hero image scale it down by setting its height to 300
+25:46
+PX in the about section reduce the padding to 10 PX and set the width to 90% for a snug
+25:56
+fit last for the H1 inside the info card add a slight adjustment by setting its
+26:02
+margin left to 5px these changes ensure the site looks great on
+make it responsive for mobile
+26:15
+tablets now let's make it mobile
+26:24
+friendly add another media query for screens smaller than 700 pixels
+26:34
+first hide the unordered list in the header by setting its display property to none for the black hole video adjust the
+26:41
+margin top to n
+26:47
+11px next focus on the about section set its width to 80% and apply Flex wrap
+26:53
+wrap to ensure the layout adapts to smaller screens
+26:58
+for the hero class change the flex direction to column for a vertical arrangement in the hero info adjust the
+27:05
+bottom positioning to 10
+27:10
+PX scale the hero image further by setting its height to 200 PX move it
+27:16
+slightly by positioning it 100 PX from the right and 70 PX from the top uh you
+27:22
+might notice an issue where the container doesn't cover the entire section that's not in the viewport this
+27:27
+happens because its height is set to 100 VH fix this by targeting the container
+27:34
+class and setting its height to 100% with these updates your website now
+27:39
+looks fantastic on all screen sizes from tablets to mobile devices the final step is adding a
+27:45
+Reload animation uh which will be a fun and simple enhancement to make the website even more
+add reload animation
+27:52
+engaging to add reload animations to our project we'll use the AOS animate on
+27:58
+scroll Library start by searching AOS on Google and clicking on the AOS page this
+28:04
+Library offers a wide range of reload animations to access the library go to
+28:10
+the top right corner of the AOS website and click the GitHub icon this will take you to the libraryies GitHub repository
+28:17
+once there scroll down until you find the basic installation section copy the code for the library
+28:23
+stylesheet and paste it into the head section of your HTML file then copy the
+28:29
+script code and paste it inside the body section below all your other elements now head back to the AOS website to
+28:36
+explore the available animations let's start by adding a fade down animation to our header copy the
+28:42
+relevant code snippet and paste it inside the header tag in your
+28:50
+HTML to customize it further add the data AOS duration attribute and set it
+28:56
+to 2,000 milliseconds reload the project in your browser and
+29:02
+you'll see the header animate as the page loads next apply the same reload animation to the black hole video copy
+29:09
+the fade down code and paste it inside the black hole box div it looks great already let's enhance the hero info
+29:16
+section by adding a fade right animation copy the code from the AOS site paste it into the hero info div and
+29:23
+set the animation duration to 1,000 milliseconds
+29:30
+to add a bit more detail copy the same fade right animation for the H1 inside the hero info but increase the duration
+29:37
+to 3,000 milliseconds for a smooth gradual effect finally let's make the hero image
+29:44
+pop by adding a Zoomin animation on the AOS site scroll down to find the zoom in
+29:49
+animation copy its code and paste it into the hero image tag set the animation duration to 2,000 milliseconds
+29:56
+for a dramatic effect congratulations my friend you've
